@@ -9,12 +9,25 @@ public class Car implements Vehicle{
     private int wheelsNumber;
     private double value;
     private int serialNumber;
-    private String EngineType;
+    private String engineType;
     private int fuelType;
-
     private String houseBrand;
     private boolean fullExtras;
 
+    protected Car(String id, String line, String color, int doorsNumber, int windowsNumber, int wheelsNumber, double value, int serialNumber, String engineType, int fuelType, String houseBrand, boolean fullExtras) {
+        this.id = id;
+        this.line = line;
+        this.color = color;
+        this.doorsNumber = doorsNumber;
+        this.windowsNumber = windowsNumber;
+        this.wheelsNumber = wheelsNumber;
+        this.value = value;
+        this.serialNumber = serialNumber;
+        this.engineType = engineType;
+        this.fuelType = fuelType;
+        this.houseBrand = houseBrand;
+        this.fullExtras = fullExtras;
+    }
 
     @Override
     public void igniteEngine() {
