@@ -24,4 +24,5 @@ public interface Builder {
     public void setHouseBrand(String houseBrand);
 
     public void setFullExtras(boolean fullExtras);
+    public Car build();
 }
