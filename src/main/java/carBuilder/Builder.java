@@ -1,28 +1,28 @@
 package carBuilder;
 
 public interface Builder {
-    public void setId(String id);
+    public Builder setId(String id);
 
-    public void setLine(String line);
+    public Builder setLine(String line);
 
-    public void setColor(String color);
+    public Builder setColor(String color);
 
-    public void setDoorsNumber(int doorsNumber);
+    public Builder setDoorsNumber(int doorsNumber);
 
-    public void setWindowsNumber(int windowsNumber);
+    public Builder setWindowsNumber(int windowsNumber);
 
-    public void setWheelsNumber(int wheelsNumber);
+    public Builder setWheelsNumber(int wheelsNumber);
 
-    public void setValue(double value);
+    public Builder setValue(double value);
 
-    public void setSerialNumber(int serialNumber);
+    public Builder setSerialNumber(int serialNumber);
 
-    public void setEngineType(String engineType);
+    public Builder setEngineType(String engineType);
 
-    public void setFuelType(int fuelType);
+    public Builder setFuelType(int fuelType);
 
-    public void setHouseBrand(String houseBrand);
+    public Builder setHouseBrand(String houseBrand);
 
-    public void setFullExtras(boolean fullExtras);
+    public Builder setFullExtras(boolean fullExtras);
     public Car build();
 }

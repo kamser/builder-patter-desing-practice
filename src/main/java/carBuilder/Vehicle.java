@@ -7,4 +7,5 @@ public interface Vehicle {
     public void goBackward();
     public void moveForward();
     public void turnOffEngine();
+    public void presentSpecs();
 }

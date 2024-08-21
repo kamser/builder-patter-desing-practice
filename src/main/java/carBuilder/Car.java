@@ -1,5 +1,7 @@
 package carBuilder;
 
+import javax.swing.*;
+
 public class Car implements Vehicle{
     private String id;
     private String line;
@@ -57,5 +59,20 @@ public class Car implements Vehicle{
     @Override
     public void turnOffEngine() {
 
+    }
+
+    @Override
+    public void presentSpecs() {
+        StringBuilder carSpecifications = new StringBuilder();
+        carSpecifications.append("\n- Name: " + houseBrand)
+                .append("\n- id: " + id)
+                .append("\n- line: " + line)
+                .append("\n- color: " + color)
+                .append("\n- Doors Number: " + doorsNumber)
+                .append("\n- Windows Number: " + windowsNumber)
+                .append("\n- Wheels Number: " + wheelsNumber)
+                .append("\n- Value: " + value)
+                .append("\n- Engine Type: " + engineType);
+        JOptionPane.showMessageDialog(null, carSpecifications.toString() ,"Car Spects", JOptionPane.INFORMATION_MESSAGE);
     }
 }

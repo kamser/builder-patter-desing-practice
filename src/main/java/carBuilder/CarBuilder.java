@@ -15,52 +15,64 @@ public class CarBuilder implements Builder{
     private String houseBrand;
     private boolean fullExtras;
 
-    public void setId(String id) {
+    public CarBuilder setId(String id) {
         this.id = id;
+        return this;
     }
 
-    public void setLine(String line) {
+    public CarBuilder setLine(String line) {
         this.line = line;
+        return this;
     }
 
-    public void setColor(String color) {
+    public CarBuilder setColor(String color) {
         this.color = color;
+        return this;
     }
 
-    public void setDoorsNumber(int doorsNumber) {
+    public CarBuilder setDoorsNumber(int doorsNumber) {
         this.doorsNumber = doorsNumber;
+        return this;
     }
 
-    public void setWindowsNumber(int windowsNumber) {
+    public CarBuilder setWindowsNumber(int windowsNumber) {
         this.windowsNumber = windowsNumber;
+        return this;
     }
 
-    public void setWheelsNumber(int wheelsNumber) {
+    public CarBuilder setWheelsNumber(int wheelsNumber) {
         this.wheelsNumber = wheelsNumber;
+        return this;
     }
 
-    public void setValue(double value) {
+    public CarBuilder setValue(double value) {
         this.value = value;
+        return this;
     }
 
-    public void setSerialNumber(int serialNumber) {
+    public CarBuilder setSerialNumber(int serialNumber) {
         this.serialNumber = serialNumber;
+        return this;
     }
 
-    public void setEngineType(String engineType) {
+    public CarBuilder setEngineType(String engineType) {
         this.engineType = engineType;
+        return this;
     }
 
-    public void setFuelType(int fuelType) {
+    public CarBuilder setFuelType(int fuelType) {
         this.fuelType = fuelType;
+        return this;
     }
 
-    public void setHouseBrand(String houseBrand) {
+    public CarBuilder setHouseBrand(String houseBrand) {
         this.houseBrand = houseBrand;
+        return this;
     }
 
-    public void setFullExtras(boolean fullExtras) {
+    public CarBuilder setFullExtras(boolean fullExtras) {
         this.fullExtras = fullExtras;
+        return this;
     }
 
     @Override
